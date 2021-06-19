@@ -10,11 +10,6 @@ def scrape():
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
 
-
-def scrape():
-    browser = init_browser()
-    collection.drop()
-
     # Step 1 - Scraping
     ### NASA Mars News - Print Article Title & Description
    
