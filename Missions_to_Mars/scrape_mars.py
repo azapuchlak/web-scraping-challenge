@@ -5,13 +5,7 @@ import pandas as pd
 from webdriver_manager.chrome import ChromeDriverManager
 import requests
 
-# DB Setup
-#
-
 client = pymongo.MongoClient('mongodb://localhost:27017')
-db = client.mars_db
-collection = db.mars
-
 
 def scrape():
      # Set chromedriver path
