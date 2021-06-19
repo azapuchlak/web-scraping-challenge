@@ -6,9 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import requests
 
 def scrape():
-     # Set chromedriver path
-    executable_path = {'executable_path': ChromeDriverManager().install()}
-    browser = Browser('chrome', **executable_path, headless=False)
+    # Set Executable Path & Initialize Chrome Browser
+    executable_path = {"executable_path": ChromeDriverManager().install()}
+    browser = Browser("chrome", **executable_path, headless=False)
 
     # Step 1 - Scraping
     ### NASA Mars News - Print Article Title & Description
