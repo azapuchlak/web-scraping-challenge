@@ -5,8 +5,6 @@ import pandas as pd
 from webdriver_manager.chrome import ChromeDriverManager
 import requests
 
-client = pymongo.MongoClient('mongodb://localhost:27017')
-
 def scrape():
      # Set chromedriver path
     executable_path = {'executable_path': ChromeDriverManager().install()}
